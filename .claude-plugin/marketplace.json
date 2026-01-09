@@ -6,7 +6,7 @@
     },
     "metadata": {
         "description": "Custom AI agents for Research Software Engineering (RSE) and Scientific Computing tasks",
-        "version": "0.1.1"
+        "version": "0.1.0"
     },
     "plugins": [
         {
@@ -42,36 +42,28 @@
             ]
         },
         {
-            "name": "scientific-domain-applications",
-            "source": "./plugins",
-            "description": "Domain-specific scientific computing agents and skills for astronomy, geospatial analysis, climate science, and interactive visualization",
-            "version": "0.2.0",
-            "author": {
-                "name": "SSEC Research Team",
-                "url": "https://github.com/uw-ssec"
-            },
+            "name": "holoviz-visualization",
+            "source": "./plugins/holoviz-visualization",
+            "description": "Development kit for working with HoloViz ecosystem (Panel, hvPlot, HoloViews, Datashader, GeoViews, Lumen)",
             "homepage": "https://github.com/uw-ssec/rse-agents",
             "repository": "https://github.com/uw-ssec/rse-agents",
             "license": "MIT",
             "keywords": [
-                "astronomy",
-                "astrophysics",
-                "astropy",
-                "xarray",
-                "geospatial",
-                "climate",
+                "holoviz",
+                "panel",
+                "hvplot",
+                "holoviews",
+                "datashader",
+                "geoviews",
+                "lumen",
+                "bokeh",
                 "visualization",
+                "interactive-dashboards",
+                "data-visualization",
                 "scientific-computing"
             ],
             "category": "data-science",
-            "strict": false,
-            "agents": [
-                "./agents/astronomy-astrophysics-expert.md"
-            ],
-            "skills": [
-                "./skills/xarray-for-multidimensional-data",
-                "./skills/astropy-fundamentals"
-            ]
+            "strict": false
         }
     ]
 }
